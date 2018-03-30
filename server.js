@@ -51,8 +51,8 @@ app.get('/contact', (request, response)  => {
 
 
 // Catch all other routes and return the index file
-app.get('*', (req, res)  => {
-    response.render('pages/index');
+app.get('*', (request, response)  => {
+    response.render('pages/index', {active: 1});
     // res.sendFile(path.join(__dirname, 'src/index.html'));
 });
 
