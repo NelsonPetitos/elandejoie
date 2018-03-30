@@ -1,11 +1,11 @@
 <% include header %>
 <body>
-		<% include menu %>
+		<%- include('menu', {active: active}); %>
 		<div class="maine">
 		<div class="container">
 			<div class="contact">
 					<div class="contact-head text-center">
-						<h3>Contact us</h3>
+						<h3>Nous contacter</h3>
 					</div>		
 						
 					<div class="contact-grids">
@@ -17,7 +17,7 @@
 							<form>
 								<div class="contact-form-row">
 									<div>
-										<span>Name :</span>
+										<span>Nom :</span>
 										<input type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
 									</div>
 									<div>
@@ -25,7 +25,7 @@
 										<input type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
 									</div>
 									<div>
-										<span>Subject :</span>
+										<span>Sujet :</span>
 										<input type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
 									</div>
 									<div class="clearfix"> </div>

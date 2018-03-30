@@ -2,34 +2,7 @@
 <body>
 	<div class="header" id="home">
 			<div class="container">
-				<div class="header-top">
-					<div class="top-menu">
-						<span class="menu"><img src="/assets/images/nav.png" alt=""/> </span>
-						<ul>
-							<li><a href="/" class="active">home</a></li><label>/</label>
-							<li><a href="/about">About</a></li><label>/</label>
-							<li><a href="/services">Services</a></li><label>/</label>
-							<li><a href="/products">products</a></li><label>/</label>
-							<li><a href="/blog">blog</a></li><label>/</label>
-							<li><a href="/contact">Contact</a></li>
-						</ul>
-						<!-- script for menu -->
-						<script>
-							$("span.menu").click(function(){ $(".top-menu ul").slideToggle("slow" , function(){}); });
-						</script>
-		<!-- //script for menu -->
-					</div>
-					<div class="search">
-						<form>
-							<input type="text" value="Search.." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" >
-							<input type="submit" value="">
-						</form>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="logo wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-					<a href="/">cultivation</a>
-				</div>
+					<%- include('menu-content', {active: active}); %>
 				<div class="header-bottom">
 					<div class="header-grids">
 						<div class="col-md-3 header-grid">
@@ -69,7 +42,7 @@
 		<div class="content">
 			<div class="about-section">
 				<div class="container">
-					<h3>about us</h3>
+					<h3>A propos de nous</h3>
 					<div class="about-grids">
 						<div class="col-md-5 about-img wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 							<img src="/assets/images/img1.jpg" class="img-responsive" alt="/">
@@ -85,7 +58,7 @@
 			</div>
 			<div class="service-section">
 					<div class="container">
-						<h3>our services</h3>
+						<h3>Nos services</h3>
 						<div class="service-grids">
 						<div class="col-md-4 service-grid wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 						<img src="/assets/images/icon1.png" class="img-responsive" alt="/">
@@ -108,7 +81,7 @@
 			</div>
 			<div class="work-section wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 			<div class="container">
-			<h3>our latest works</h3>
+			<h3>Nos dernières réalisations</h3>
 			<div class="latest-grids">
 			<div class="latest-grid1">
 				<div class="col-md-3 latest-grid work">
@@ -170,28 +143,28 @@
 			</div>
 			<div class="news-section">
 			<div class="container">
-			<h3>latest news</h3>
+			<h3>A la une</h3>
 			<div class="news-grids">
 						<div class="col-md-4 news-grid wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 						<img src="/assets/images/img10.jpg" class="img-responsive" alt="/">
 						<h4><a href="#">Dolor nunc vule putateulr</a></h4>
 						<p class="date">March 23rd, 2015 <a href="#">5 Comments</a></p>
 								<p>Praesent vestim molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-							<a href="#" class="button hvr-shutter-in-vertical">read more</a>
+							<a href="#" class="button hvr-shutter-in-vertical">La suite</a>
 							</div>
 						<div class="col-md-4 news-grid wow fadeInDown Big animated animated" data-wow-delay="0.4s">
 						<img src="/assets/images/img11.jpg" class="img-responsive" alt="/">
 							<h4><a href="#">Dolor nunc vule putateulr</a></h4>
 						<p class="date">March 23rd, 2014 <a href="#">5 Comments</a></p>
 								<p>Praesent vestim molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-							<a href="#" class="button hvr-shutter-in-vertical">read more</a>
+							<a href="#" class="button hvr-shutter-in-vertical">La suite</a>
 							</div>
 						<div class="col-md-4 news-grid wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 						<img src="/assets/images/img12.jpg" class="img-responsive" alt="/">
 						<h4><a href="#">Dolor nunc vule putateulr</a></h4>
 					<p class="date">March 25rd, 2014 <a href="#">5 Comments</a></p>
 								<p>Praesent vestim molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-								<a href="#" class="button hvr-shutter-in-vertical">read more</a>
+								<a href="#" class="button hvr-shutter-in-vertical">La suite</a>
 								</div>
 						<div class="clearfix"></div>
 						</div>

@@ -1,6 +1,6 @@
 <% include header %>
 <body>
-		<% include menu %>
+		<%- include('menu', {active: active}); %>
 		<div class="content">
 	<div class="main wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 		<div class="error-404 text-center">

@@ -16,7 +16,7 @@ app.use('/assets', express.static(path.join(__dirname, 'public')));
 
 // Catch all other routes and return the index file
 app.get('/', (request, response)  => {
-    response.render('pages/index');
+    response.render('pages/index', {active: 1});
     // res.sendFile(path.join(__dirname, 'pages/index.html'));
 });
 

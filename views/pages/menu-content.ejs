@@ -1,0 +1,51 @@
+<div class="header-top">
+        <div class="top-menu">
+              <span class="menu"><img src="/assets/images/nav.png" alt=""/> </span>
+            <ul>
+                <% if(active == 1){ %>
+                    <li><a href="/" class="active">Accueil</a></li><label>/</label>
+                <% }else{ %>
+                    <li><a href="/">Accueil</a></li><label>/</label>
+                <% } %>
+                <% if(active == 2){ %>
+                    <li><a href="/about" class="active">A propos</a></li><label>/</label>
+                <% }else{ %>
+                    <li><a href="/about">A propos</a></li><label>/</label>
+                <% } %>
+                <% if(active == 3){ %>
+                    <li><a href="/services" class="active">Nos Services</a></li><label>/</label>
+                <% }else{ %>
+                    <li><a href="/services">Nos Services</a></li><label>/</label>
+                <% } %>
+                <% if(active == 4){ %>
+                    <li><a href="/products" class="active">Les produits</a></li><label>/</label>
+                <% }else{ %>
+                    <li><a href="/products">Les produits</a></li><label>/</label>
+                <% } %>
+                <% if(active == 5){ %>
+                    <li><a href="/blog" class="active">Le blog</a></li><label>/</label>
+                <% }else{ %>
+                    <li><a href="/blog">Le blog</a></li><label>/</label>
+                <% } %>
+                <% if(active == 6){ %>
+                    <li><a href="/contact" class="active">Contacts</a></li>
+                <% }else{ %>
+                    <li><a href="/contact">Contacts</a></li>
+                <% } %>
+                
+            </ul>
+            <script>
+                $("span.menu").click(function(){$(".top-menu ul").slideToggle("slow" , function(){});});
+            </script>
+         </div>
+        <div class="search">
+            <form>
+                <input type="text" value="Rechercher.." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" >
+                <input type="submit" value="">
+            </form>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="logo logo1">
+        <a href="/">ElanDeJoie</a>
+    </div>
